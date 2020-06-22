@@ -6,7 +6,7 @@ first_name: input("Ingrese nombre: ")
 last_name: input("Ingrese apellido: ")
 
 sql = ("INSERT INTO actor (first_name,last_name) VALUES(%s,%s)")
-data = ("CLAUDIA", "SAAVEDRA")
+data = (first_name, last_name)
 
 cursor.execute(sql,data)
 cnx.commit()
